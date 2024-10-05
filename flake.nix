@@ -9,6 +9,16 @@
         description = "A flake skeleton with flake-utils for all default systems";
       };
 
+      revealjs = {
+        path = ./revealjs;
+        description = "A reveal.js presentation";
+        welcomeText = ''
+          # Initialized a reveal.js presentation.
+
+          reveal.js: <https://revealjs.com/>.
+        '';
+      };
+
       readme-and-licence = {
         path = ./readme-and-licence;
         description = "Basic README and LICENSE skeletons";
