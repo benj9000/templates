@@ -31,6 +31,16 @@
         '';
       };
 
+      python-poetry = {
+        path = ./python-poetry;
+        description = "A Python project with Poetry";
+        welcomeText = ''
+          # Initialized a Python project with Poetry.
+
+          Poetry: <https://python-poetry.org/>
+        '';
+      };
+
     };
   };
 }
