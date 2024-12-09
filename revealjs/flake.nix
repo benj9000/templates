@@ -46,9 +46,9 @@
           text = let presentationUrl = "http://localhost:8000"; in ''
             ${initRevealJs}
             echo "Starting reveal.js server…"
-            if [ -n "$BROWSER" ]; then
+            if [ -n "''${BROWSER:-}" ] && command -v "$BROWSER" > /dev/null; then
                 "$BROWSER" "${presentationUrl}"
-            elif which xdg-open > /dev/null; then
+            elif command -v xdg-open > /dev/null; then
                 xdg-open "${presentationUrl}"
             else
                 echo "Open ${presentationUrl} in your web browser."
