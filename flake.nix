@@ -41,6 +41,15 @@
         '';
       };
 
+      python-uv = {
+        path = ./python-uv;
+        description = "A Python project with uv";
+        welcomeText = ''
+          # Initialized a Python project with uv.
+
+          uv: <https://docs.astral.sh/uv/>
+        '';
+      };
     };
   };
 }
