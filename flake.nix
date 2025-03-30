@@ -29,6 +29,19 @@
         '';
       };
 
+      python-uv2nix = {
+        path = ./python-uv2nix;
+        description = "A Python project with uv2nix";
+        welcomeText = ''
+          # Initialized a Python project with uv2nix.
+
+          Resolve the `TODO`s in the flake to finish initialization.
+
+          - uv: <https://docs.astral.sh/uv/>
+          - uv2nix: <https://github.com/pyproject-nix/uv2nix>
+        '';
+      };
+
       readme-and-licence = {
         path = ./readme-and-licence;
         description = "Basic README and LICENSE skeletons";
