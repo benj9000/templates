@@ -4,6 +4,11 @@
   outputs = { self }: {
     templates = {
 
+      envrc = {
+        path = ./envrc;
+        description = "A .envrc file for Nix flake-based projects.";
+      };
+
       flake-for-all-default-systems = {
         path = ./flake-for-all-default-systems;
         description = "A flake skeleton with flake-utils for all default systems";
